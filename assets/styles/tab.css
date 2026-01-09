@@ -280,11 +280,13 @@
     /* Ratings */
     .ratings {
         padding: 40px 48px;
+        gap: 22px;
     }
 
     .ratings__left {
-        flex: 0 0 360px;
+        flex: 0 0 560px;
     }
+  
 
     .ratings__logo {
         width: 140px;
@@ -600,7 +602,7 @@
     }
 
     .ratings__left {
-        flex: 0 0 320px;
+        flex: 0 0 620px;
     }
 
     .ratings__right {

@@ -14,41 +14,41 @@ if ( ! defined( 'ABSPATH' ) ) {
 </head>
 <body <?php body_class(); ?>>
 	<?php wp_body_open(); ?>
-	        <!-- Hero -->
-        <section class="hero" aria-label="Hero">
-            <div class="hero-decor hero-decor--right" aria-hidden="true"></div>
-            <div class="container">
-                <div class="hero-grid">
+			<!-- Hero -->
+		<section class="hero" aria-label="Hero">
+			<div class="hero-decor hero-decor--right" aria-hidden="true"></div>
+			<div class="container">
+				<div class="hero-grid">
 
 
-                    <div class="hero-body">
-                        <h1 class="hero-title">
-                            Nevada continuing education dedicated to complete
-                            <span class="accent"> flexibility</span>.
-                        </h1>
+					<div class="hero-body">
+						<h1 class="hero-title">
+							Nevada continuing education dedicated to complete
+							<span class="accent"> flexibility</span>.
+						</h1>
 
-                        <div class="hero-card">
-                            <p class="hero-sub">Complete your real estate education <span class="accent">FAST</span>!
-                            </p>
+						<div class="hero-card">
+							<p class="hero-sub">Complete your real estate education <span class="accent">FAST</span>!
+							</p>
 
-                            <div class="hero-ctas">
-                                <a class="cta-btn" href="#">Live/ZOOM Calendar <span class="chev"
-                                        aria-hidden="true">→</span></a>
-                                <a class="cta-btn" href="#">Internet CE Courses <span class="chev"
-                                        aria-hidden="true">→</span></a>
-                                <a class="cta-btn" href="#">Bundle &amp; Save <span class="chev"
-                                        aria-hidden="true">→</span></a>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="hero-media">
-                        <figure>
-                            <img class="hero-image" src="<?php echo get_stylesheet_directory_uri(); ?>/assets/images/hero.png" alt="Students in online real estate course">
-                        </figure>
-                    </div>
-                </div>
-            </div>
-            <div class="hero-decor hero-decor--left" aria-hidden="true"></div>
-        </section>
+							<div class="hero-ctas">
+								<a class="cta-btn" href="#">Live/ZOOM Calendar <span class="chev"
+										aria-hidden="true">→</span></a>
+								<a class="cta-btn" href="#">Internet CE Courses <span class="chev"
+										aria-hidden="true">→</span></a>
+								<a class="cta-btn" href="#">Bundle &amp; Save <span class="chev"
+										aria-hidden="true">→</span></a>
+							</div>
+						</div>
+					</div>
+					<div class="hero-media">
+						<figure>
+							<img class="hero-image" src="<?php echo get_stylesheet_directory_uri(); ?>/assets/images/hero.png" alt="Students in online real estate course">
+						</figure>
+					</div>
+				</div>
+			</div>
+			<div class="hero-decor hero-decor--left" aria-hidden="true"></div>
+		</section>
 </body>
 </html>

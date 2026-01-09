@@ -7,6 +7,5 @@ Template: astra
 Version: 1.0.0
 Text Domain: astra-child
 */
-@import url("../astra-child/assets/styles/main.css");
 
 @import url("../astra/style.css");
