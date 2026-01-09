@@ -1,5 +1,7 @@
-<?php
+<?php get_header(); ?>
 
-if ( ! defined( 'ABSPATH' ) ) {
-	exit; // Exit if accessed directly.
-}
+<main class="site-main">
+	<?php get_template_part( 'template-parts/hero' ); ?>
+</main>
+
+<?php get_footer(); ?>
