@@ -20,8 +20,8 @@ if ( ! defined( 'ABSPATH' ) ) {
                         </div>
 
                         <div class="tools-block__profile">
-                            <figure class="tools-block__avatar-wrap">
-                                <img class="tools-block__avatar" src="<?php echo get_stylesheet_directory_uri(); ?>/assets/images/tools-test.png" alt="Scott Beaudry">
+                                <figure class="tools-block__avatar-wrap">
+                                <img loading="lazy" class="tools-block__avatar" src="<?php echo get_stylesheet_directory_uri(); ?>/assets/images/tools-test.webp" alt="Scott Beaudry" width="120" height="120">
                             </figure>
                             <div class="tools-block__meta">
                                 <div class="tools-block__name">Scott Beaudry</div>
@@ -29,12 +29,11 @@ if ( ! defined( 'ABSPATH' ) ) {
                             </div>
                         </div>
 
-                        <a class="tools-block__cta" href="#">Explore Now <span class="sr-only">tools and
-                                resources</span></a>
+                        <a class="tools-block__cta" href="#">Explore Now <span style="margin-left: 6px;"><img loading="lazy" src="<?php echo get_stylesheet_directory_uri(); ?>/assets/images/icons/right-fill.svg" alt="" srcset=""></span> </a>
                     </div>
 
                     <div class="tools-block__media">
-                        <img class="tools-block__hero" src="<?php echo get_stylesheet_directory_uri(); ?>/assets/images/tools-model.png" alt="Tools overview illustration">
+                        <img loading="lazy" class="tools-block__hero" src="<?php echo get_stylesheet_directory_uri(); ?>/assets/images/tools-model.webp" alt="Tools overview illustration" width="600" height="400">
                     </div>
                 </div>
             </div>

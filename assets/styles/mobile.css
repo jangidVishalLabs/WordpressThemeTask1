@@ -13,7 +13,7 @@
         justify-content: space-around;
         gap: 10px;
         position: relative;
-        z-index: 10000;
+        z-index: 1000;
     }
 
     .brand-logo {
@@ -26,21 +26,15 @@
         align-items: center;
         justify-content: space-between;
         gap: 8px;
-        position: relative;
     }
 
     .nav-toggle {
         position: absolute;
-        right: .5rem;
-        
-    }
-    .nav-menu{
-        z-index: 1000;
+        right: 1rem;
     }
 
     .actions-list {
         gap: 8px;
-
     }
 
     .btn-primary {
@@ -62,6 +56,7 @@
         flex-direction: column;
         align-items: stretch;
         gap: 8px;
+        z-index: 1;
     }
 
     .location {
@@ -112,11 +107,14 @@
 
     .hero-ctas {
         gap: 8px;
+        display: flex;
+        flex-direction: column;
     }
 
     .cta-btn {
         padding: 10px 12px;
-        font-size: 16px;     /* was 14px → +2px */
+        font-size: 16px; 
+        width: fit-content;    /* was 14px → +2px */
     }
 
     /* ======================== STATS SECTION ======================== */
@@ -140,6 +138,7 @@
         width: 56px;
         height: 56px;
     }
+
 
     /* ======================== COURSES SECTION ======================== */
     .courses {
@@ -211,7 +210,7 @@
     }
 
     /* ======================== BENEFITS SECTION ======================== */
-    .benefits-1 {
+    .benefits-1, .benefits-container{
         padding: 20px 12px;
         flex-direction: column;
         gap: 20px;
@@ -259,7 +258,7 @@
         justify-content: center;
     }
 
-    /* ======================== CARDS SECTION ======================== */
+     /* ======================== CARDS SECTION ======================== */
     .cards {
         padding: 20px 12px;
     }
@@ -280,24 +279,29 @@
     /* show one card per viewport on mobile */
     .card {
         flex: 0 0 100%;
-        /* background-color:black; */
+
+        
     }
 
     .card__media {
         height: 140px;
     }
-
     .cards__controls {
-        display: none;
-    }
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }   
 
     .cards__cta {
         width: 100%;
         justify-content: center;
     }
+    /* ======================== BUNDLE ======================== */
+    .bundle-card__media {
+        height: 220px;
+    }
 
-
-            .testimonials {
+     .testimonials {
                 padding: 56px 24px;
             }
 
@@ -318,32 +322,33 @@
                 gap: 10px;
             }
 
-    /* ======================== BUNDLE ======================== */
-    .bundle-card__media {
-        height: 220px;
+    /* ======================== PARTNERS SECTION ======================== */
+    .partners-block {
+        padding: 20px 12px;
     }
 
-    /* ======================== PARTNERS SECTION ======================== */
-           /* .partners-block {
-                padding: 40px 28px;
-            } */
+    .partners-block__title {
+        font-size: 20px;     /* was 18px → +2px */
+    }
 
-            .partners-block__title {
-                font-size: 28px;
-            }
+    .partners-block__list {
+        gap: 12px;
+    }
 
+    .partners-block__logo img {
+        height: 48px;
+    }
+
+    .partners-block__pager {
+        margin-top: 10px;
+    }
+
+    
             .partners-block__item {
-                flex: 0 0 calc(50% - 8px);
-                max-width: calc(50% - 8px);
+                flex: 0 0 100%;
+                min-width: 100%;
             }
 
-            .partners-block__logo   {
-                max-width: 120px;
-            }
-
-            .partners-block__list{
-                gap: 12px;
-            }
     /* ======================== TOOLS SECTION ======================== */
     .tools-block {
         padding: 16px 12px;
@@ -374,4 +379,12 @@
         width: 100%;
         justify-content: center;
     }
+}
+
+@media screen and (max-width: 336px){
+    .benefits-container {
+        flex-direction: column;
+    }
+
+    
 }

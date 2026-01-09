@@ -117,22 +117,23 @@
     }
 
     /* Cards */
-     .cards {
-                padding: 40px 28px;
-            }
+    .cards {
+        padding: 40px 28px;
+    }
 
-            .cards__title {
-                font-size: 28px;
-            }
+    .cards__header {
+        gap: 20px;
+    }
 
-            .card {
-                flex: 0 0 calc(50% - 8px);
-                min-width: calc(50% - 8px);
-            }
+    .cards__title {
+        font-size: 28px;     /* 26 → 28 */
+    }
 
-            .card__media {
-                height: 160px;
-            }
+
+
+    .card__media {
+        height: 160px;
+    }
 
     /* Tools Block */
     .tools-block {
@@ -280,13 +281,13 @@
     /* Ratings */
     .ratings {
         padding: 40px 48px;
-        gap: 22px;
     }
 
     .ratings__left {
-        flex: 0 0 560px;
+        flex: 0 0 360px;
+        width: 600px;
+        height: 400px;
     }
-  
 
     .ratings__logo {
         width: 140px;
@@ -341,7 +342,6 @@
         margin-top: 12px;
         text-decoration: none;
     }
-
     /* Cards */
     .cards {
                 padding: 56px 48px;
@@ -355,9 +355,6 @@
             .cards__title {
                 font-size: 38px;
             }
-            .cards__list{
-                margin-left: 20px;
-            }
 
             .card {
                 flex: 0 0 calc(25% - 12px);
@@ -368,6 +365,16 @@
             .card__media {
                 height: 200px;
             }
+
+    .cards__controls {
+        display: block;
+        margin-top: 16px;
+    }
+
+    .cards__cta {
+        padding: 12px 24px;
+        justify-content: center;
+    }
 
     /* Tools Block */
     .tools-block {
@@ -450,14 +457,18 @@
     .big-bundle .bundle-card__title {
         font-size: 24px;     /* 22 → 24 */
     }
+    .bundle-card__prices {
+        font-size: 14px;  
+    }
 
     .side_meta {
         display: flex;
-        flex-direction: column;
+        flex-direction: row;
         gap: 10px;
+        font-size: 14px;
     }
 
-                .partners-block {
+                    .partners-block {
                 padding: 56px 48px;
             }
 
@@ -483,7 +494,7 @@
                 flex: 0 0 calc(33.333% - 11px);
                 min-width: calc(33.333% - 11px);
             }
-        
+    
 }
 
 /* ========================================================= TABLET + DESKTOP SHARED STYLES (768px and above) ========================================================= */
@@ -523,7 +534,9 @@
     .hero-ctas {
         justify-content: flex-start;
     }
-
+    .cta-btn{
+        font-size: 12px;
+    }
     .hero-decor--right {
         right: -80px;
         top: 10%;
@@ -567,6 +580,13 @@
     .stat__label {
         font-size: 18px;     /* 16 → 18 */
     }
+    .benefits-container{
+        flex-direction: row;
+    }
+
+    .benefit-right >.benefits-container {
+    flex-direction: row-reverse;
+}
 
     /* Courses */
     .courses__list {
@@ -614,7 +634,8 @@
     .offers {
         flex-direction: column;
         flex-wrap: wrap;
-        gap: 12px;
+        gap: 18px;
+        font-size: 26px;
     }
 
     .offer {
@@ -654,7 +675,7 @@
     }
 
     .site-footer__copyright {
-        font-size: 18px;     /* 16 → 18 */
+        font-size: 14px;     /* 16 → 18 */
         line-height: 2rem;
     }
 
@@ -714,8 +735,7 @@
     .bundles-block__side .bundle-card__body {
         padding: 12px;
     }
-
-    /* Testimonials */
+/* Testimonials */
     .testimonials__track {
         gap: 24px;
     }

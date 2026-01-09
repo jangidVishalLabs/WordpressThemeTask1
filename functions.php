@@ -41,19 +41,19 @@ function astra_child_enqueue_assets() {
 	);
 
 	// JS files
-	wp_enqueue_script(
-		'astra-child-scripts-header',
-		get_stylesheet_directory_uri() . '/assets/js/header.js',
-		array('jquery'),
-		$theme_version,
-		true
-	);
+	// wp_enqueue_script(
+	// 	'astra-child-scripts-header',
+	// 	get_stylesheet_directory_uri() . '/assets/js/header.js',
+	// 	array(),
+	// 	'1.0',
+	// 	false
+	// );
 
 	wp_enqueue_script(
 		'astra-child-scripts-carousel',
 		get_stylesheet_directory_uri() . '/assets/js/cards-carousel.js',
 		array(),
 		$theme_version,
-		true
+		false
 	);
 }

@@ -9,7 +9,7 @@ if ( ! defined( 'ABSPATH' ) ) {
     <footer class="site-footer" aria-label="Site footer">
         <div class="site-footer__container">
             <div class="site-footer__brand">
-                <img src="<?php echo get_stylesheet_directory_uri(); ?>/assets/images/logo.png" alt="ceASAP logo" class="site-footer__logo">
+                <img loading="lazy" src="<?php echo get_stylesheet_directory_uri(); ?>/assets/images/logo.webp" alt="ceASAP logo" class="site-footer__logo" width="160" height="40">
                 <div>
                     <p class="site-footer__copyright">© ceASAP LTD and its subsidiaries 2025. Except as permitted by
                         the
@@ -19,15 +19,15 @@ if ( ! defined( 'ABSPATH' ) ) {
 
                     <ul class="site-footer__social" aria-label="Follow us">
                         <li><a href="#" aria-label="Facebook" class="site-footer__social-link"><img
-                                    src="<?php echo get_stylesheet_directory_uri(); ?>/assets/images/icons/f1.svg" alt="Facebook"></a></li>
+                                    loading="lazy" src="<?php echo get_stylesheet_directory_uri(); ?>/assets/images/icons/f1.svg" alt="Facebook" width="24" height="24"></a></li>
                         <li><a href="#" aria-label="Instagram" class="site-footer__social-link"><img
-                                    src="<?php echo get_stylesheet_directory_uri(); ?>/assets/images/icons/f2.png" alt="Instagram"></a></li>
-                        <li><a href="#" aria-label="X" class="site-footer__social-link"><img src="<?php echo get_stylesheet_directory_uri(); ?>/assets/images/icons/f3.svg"
-                                    alt="X"></a></li>
+                                    loading="lazy" src="<?php echo get_stylesheet_directory_uri(); ?>/assets/images/icons/f2.png" alt="Instagram" width="24" height="24"></a></li>
+                        <li><a href="#" aria-label="X" class="site-footer__social-link"><img loading="lazy" src="<?php echo get_stylesheet_directory_uri(); ?>/assets/images/icons/f3.svg"
+                                    alt="X" width="24" height="24"></a></li>
                         <li><a href="#" aria-label="YouTube" class="site-footer__social-link"><img
-                                    src="<?php echo get_stylesheet_directory_uri(); ?>/assets/images/icons/f4.svg" alt="YouTube"></a></li>
+                                    loading="lazy" src="<?php echo get_stylesheet_directory_uri(); ?>/assets/images/icons/f4.svg" alt="YouTube" width="24" height="24"></a></li>
                         <li><a href="#" aria-label="LinkedIn" class="site-footer__social-link"><img
-                                    src="<?php echo get_stylesheet_directory_uri(); ?>/assets/images/icons/f5.svg" alt="LinkedIn"></a></li>
+                                    loading="lazy" src="<?php echo get_stylesheet_directory_uri(); ?>/assets/images/icons/f5.svg" alt="LinkedIn" width="24" height="24"></a></li>
                     </ul>
                 </div>
             </div>
@@ -62,7 +62,9 @@ if ( ! defined( 'ABSPATH' ) ) {
         </div>
         <div class="site-footer__small">© 2025 ceASAP.com - All rights reserved.</div>
     </footer>
+<script src="wp-content/themes/astra-child/assets/js/header.js" defer></script>
 
 </body>
-
 </html>
+
+

@@ -13,7 +13,7 @@ if ( ! defined( 'ABSPATH' ) ) {
                     <!-- Featured bundle (large) -->
                     <article class="bundle-card bundle-card--featured">
                         <figure class="bundle-card__media">
-                            <img src="<?php echo get_stylesheet_directory_uri(); ?>/assets/images/bundle1.png" alt="36-Hour ceBUILDER Bundle" />
+                            <img loading="lazy" src="<?php echo get_stylesheet_directory_uri(); ?>/assets/images/bundle1.webp" alt="36-Hour ceBUILDER Bundle" width="600" height="400" />
                         </figure>
                         <div class="bundle-card__body big-bundle">
                             <h3 class="bundle-card__title"><span class="muted">36-Hour</span> <span
@@ -29,8 +29,7 @@ if ( ! defined( 'ABSPATH' ) ) {
                                     <span class="bundle-price bundle-price--new">$119.00</span>
                                 </div>
 
-                                <a class="bundle-cta" href="#" role="button">Learn More <span
-                                        aria-hidden="true">→</span></a>
+                                        <a class="bundle-cta" href="#" role="button">Learn More <span><img loading="lazy" src="<?php echo get_stylesheet_directory_uri(); ?>/assets/images/icons/right-fill.svg" alt="" srcset="" width="16" height="16"></span></a>
                             </div>
                         </div>
                     </article>
@@ -38,8 +37,8 @@ if ( ! defined( 'ABSPATH' ) ) {
                     <!-- Right column: two smaller bundles stacked -->
                     <div class="bundles-block__side">
                         <article class="bundle-card">
-                            <figure class="bundle-card__media">
-                                <img src="<?php echo get_stylesheet_directory_uri(); ?>/assets/images/bundle2.png" alt="18-Hour Internet CE Bundle" />
+                                <figure class="bundle-card__media">
+                                <img loading="lazy" src="<?php echo get_stylesheet_directory_uri(); ?>/assets/images/bundle2.webp" alt="18-Hour Internet CE Bundle" width="300" height="200" />
                             </figure>
                             <div class="bundle-card__body">
                                 <h4 class="bundle-card__title">18-Hour Internet CE Bundle</h4>
@@ -53,15 +52,14 @@ if ( ! defined( 'ABSPATH' ) ) {
                                         <span class="bundle-price bundle-price--old">$99.00</span>
                                         <span class="bundle-price bundle-price--new">$50.00</span>
                                     </div>
-                                    <a class="bundle-cta" href="#" role="button">Learn More <span
-                                            aria-hidden="true">→</span></a>
+                                        <a class="bundle-cta" href="#" role="button">Learn More <span><img loading="lazy" src="<?php echo get_stylesheet_directory_uri(); ?>/assets/images/icons/right-fill.svg" alt="" srcset="" width="16" height="16"></span></a>
                                 </div>
                             </div>
                         </article>
 
                         <article class="bundle-card">
-                            <figure class="bundle-card__media">
-                                <img src="<?php echo get_stylesheet_directory_uri(); ?>/assets/images/bundle3.png" alt="18-Hour Live/ZOOM CE Bundle" />
+                                <figure class="bundle-card__media">
+                                <img loading="lazy" src="<?php echo get_stylesheet_directory_uri(); ?>/assets/images/bundle3.webp" alt="18-Hour Live/ZOOM CE Bundle" width="300" height="200" />
                             </figure>
                             <div class="bundle-card__body">
                                 <h4 class="bundle-card__title">18-Hour Live/ZOOM CE Bundle</h4>
@@ -74,8 +72,7 @@ if ( ! defined( 'ABSPATH' ) ) {
                                         <span class="bundle-price bundle-price--old">$129.00</span>
                                         <span class="bundle-price bundle-price--new">$79.00</span>
                                     </div>
-                                    <a class="bundle-cta" href="#" role="button">Learn More <span
-                                            aria-hidden="true">→</span></a>
+                                        <a class="bundle-cta" href="#" role="button">Learn More <span><img loading="lazy" src="<?php echo get_stylesheet_directory_uri(); ?>/assets/images/icons/right-fill.svg" alt="" srcset="" width="16" height="16"></span></a>
                                 </div>
                             </div>
                         </article>

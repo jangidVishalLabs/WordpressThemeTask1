@@ -11,6 +11,7 @@
 	<?php get_template_part( 'template-parts/bundle' ); ?>
 	<?php get_template_part( 'template-parts/tools' ); ?>
 	<?php get_template_part( 'template-parts/faq' ); ?>
+	<?php get_template_part( 'template-parts/contacts' ); ?>
 	<?php get_template_part( 'template-parts/partners' ); ?>
 </main>
 
