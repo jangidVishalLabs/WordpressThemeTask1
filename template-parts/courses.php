@@ -4,15 +4,7 @@ if ( ! defined( 'ABSPATH' ) ) {
 	exit; // Exit if accessed directly.
 }
 ?>
-<!DOCTYPE html>
-<html lang="en">
-<head>
-	<meta charset="UTF-8">
-	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-	<title> <?php wp_title(); ?></title>
-</head>
-<body <?php body_class(); ?>>
-	<?php wp_body_open(); ?>
+
 			<section class="courses" aria-label="Course types">
 			<div class="courses__container">
 				<ul class="courses__list">
@@ -53,6 +45,3 @@ if ( ! defined( 'ABSPATH' ) ) {
 				</ul>
 			</div>
 		</section>
-	
-</body>
-</html>

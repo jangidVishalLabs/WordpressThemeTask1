@@ -5,16 +5,6 @@ if ( ! defined( 'ABSPATH' ) ) {
 }
 ?>
 
-<!DOCTYPE html>
-<html lang="en">
-<head>
-	<meta charset="UTF-8">
-	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-	<?php wp_head(); ?>
-</head>
-<body <?php body_class(); ?>>
-	<?php wp_body_open(); ?>
-			<!-- Hero -->
 		<section class="hero" aria-label="Hero">
 			<div class="hero-decor hero-decor--right" aria-hidden="true"></div>
 			<div class="container">
@@ -50,5 +40,3 @@ if ( ! defined( 'ABSPATH' ) ) {
 			</div>
 			<div class="hero-decor hero-decor--left" aria-hidden="true"></div>
 		</section>
-</body>
-</html>

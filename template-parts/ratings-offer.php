@@ -4,15 +4,7 @@ if ( ! defined( 'ABSPATH' ) ) {
 	exit; // Exit if accessed directly.
 }
 ?>
-<!DOCTYPE html>
-<html lang="en">
-<head>
-	<meta charset="UTF-8">
-	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-	<titl><?php wp_title(); ?></title>
-</head>
-<body <?php body_class(); ?>>
-	<?php wp_body_open(); ?>
+
 	        <section class="ratings" aria-label="Ratings and current offers">
             <div class="ratings__container">
                 <div class="ratings__left">
@@ -38,6 +30,3 @@ if ( ! defined( 'ABSPATH' ) ) {
                 </div>
             </div>
         </section>
-	
-</body>
-</html>

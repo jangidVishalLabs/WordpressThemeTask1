@@ -1,60 +1,59 @@
 <?php
-
 if ( ! defined( 'ABSPATH' ) ) {
-	exit; // Exit if accessed directly.
+	exit;
 }
 
-/**  Hooks  */
-add_action( 'wp_enqueue_scripts', 'astra_child_enqueue_styles' );
-add_action( 'wp_enqueue_scripts ', 'astra_child_enqueue_scripts' );
+/** Hooks */
+add_action( 'wp_enqueue_scripts', 'astra_child_enqueue_assets', 20 );
 
-/**Includes */
+function astra_child_enqueue_assets() {
 
+	$theme_version = wp_get_theme()->get( 'Version' );
 
-
-/** Functions */
-/**
- * Enqueue child theme styles
- */
-function astra_child_enqueue_styles() {
+	// Parent + child style
 	wp_enqueue_style(
 		'astra-child-style',
 		get_stylesheet_uri(),
 		array( 'astra-theme-css' ),
-		wp_get_theme()->get( 'Version' )
+		$theme_version
 	);
 
-		wp_enqueue_style(
+	// Custom styles
+	wp_enqueue_style(
 		'astra-child-custom-style',
 		get_stylesheet_directory_uri() . '/assets/styles/main.css',
 		array(),
-		'1.0'
+		$theme_version
 	);
-		wp_enqueue_style(
-			'astra-child-custom-style-tab',
-			get_stylesheet_directory_uri() . '/assets/styles/tab.css',
-			array( 'astra-child-custom-style' ),
-			'1.0',
-		);
-		wp_enqueue_style(
-			'astra-child-custom-style-mobile',
-			get_stylesheet_directory_uri() . '/assets/styles/mobile.css',
-			array( 'astra-child-custom-style-tab' ),
-			'1.0',
-		);
-}
 
-/**
- * Enqueue custom scripts
- */
-function astra_child_enqueue_scripts() {
+	wp_enqueue_style(
+		'astra-child-custom-style-tab',
+		get_stylesheet_directory_uri() . '/assets/styles/tab.css',
+		array( 'astra-child-custom-style' ),
+		$theme_version
+	);
 
+	wp_enqueue_style(
+		'astra-child-custom-style-mobile',
+		get_stylesheet_directory_uri() . '/assets/styles/mobile.css',
+		array( 'astra-child-custom-style-tab' ),
+		$theme_version
+	);
 
+	// JS files
 	wp_enqueue_script(
 		'astra-child-scripts-header',
 		get_stylesheet_directory_uri() . '/assets/js/header.js',
+		array('jquery'),
+		$theme_version,
+		true
+	);
+
+	wp_enqueue_script(
+		'astra-child-scripts-carousel',
+		get_stylesheet_directory_uri() . '/assets/js/cards-carousel.js',
 		array(),
-		'1.0',
+		$theme_version,
 		true
 	);
 }

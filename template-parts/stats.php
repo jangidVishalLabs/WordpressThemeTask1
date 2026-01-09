@@ -5,15 +5,7 @@ if ( ! defined( 'ABSPATH' ) ) {
 }
 ?>
 
-<!DOCTYPE html>
-<html lang="en">
-<head>
-	<meta charset="UTF-8">
-	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-	<?php wp_head(); ?>
-</head>
-<body <?php body_class(); ?>>
-	<?php wp_body_open(); ?>
+
 		<section class="stats" aria-label="Key statistics">
 			<div class="stats__container">
 				<ul class="stats__list">
@@ -49,5 +41,4 @@ if ( ! defined( 'ABSPATH' ) ) {
 				</ul>
 			</div>
 		</section>
-</body>
-</html>
+
